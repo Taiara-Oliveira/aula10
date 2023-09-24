@@ -1,0 +1,303 @@
+:root{
+    --cor-site: #ffffff
+}
+
+body{
+    
+        background-color: #00000094;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.maxwidth{
+    max-width: 90em;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    
+}
+
+.header_logo{
+    width: 5.9em;
+    height: 90%;
+    margin: 1em;
+}
+
+.header_nav{
+    background-color: var(--cor-site) #2b2929;
+    
+
+}
+
+ul{
+    margin: 0;
+}
+
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8ems;
+}
+
+.header_nav a{
+    color: #3f3e3e;
+text-decoration: none;
+display: block;
+padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color:color-mix(in srgb, var(--cor-site), #353434 40%);
+}
+
+@media screen and (min-width: 48em){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+    
+    .header_nav{
+      background-color: initial;
+
+    }
+
+     .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        color: var(--cor-site);
+        border-radius: 5px;
+    }
+    .header_nav a:hover{
+        background-color:color-mix(in srgb, var(--cor-site), #0e0d0d 80%);
+
+    }
+
+}
+
+.trailer{
+    background-color: rgb(161, 48, 48);
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+    color: #ffffff;
+}
+
+.trailer div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.trailer_title{
+    margin-top: 0;
+    padding-top: 1em;
+    color:#ffffff;
+    font-family: 'Great Vibes', cursive;
+    font-size:4em ;
+}
+
+.trailer h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.trailer_paragrafo{
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.trailer_botao{
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em 1em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #080808;
+    text-transform: uppercase;
+    display: block;
+    
+
+}
+
+.trailer_botao:hover{
+    background-color:color-mix(in srgb, var(--cor-site), #080808 80%);
+
+}
+
+.trailer_botao1{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em ;
+    background-color: #cfcaca;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgb(122, 11, 11);
+    text-transform: uppercase;
+}
+
+.trailer_botao1:hover{
+    background-color:color-mix(in srgb, var(--cor-site), #292828 80%);
+}
+
+
+.video{
+    display: none;
+}
+@media screen and (min-width:48em){
+    .trailer{
+        background-image: url(imagens/fundo-vermelho-escuro46.webp);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+    .trailer_paragrafo{
+       margin-bottom: 2em;
+    }
+.trailer_title{
+    background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+
+}
+
+.trailer_botao{
+    display: none;
+}
+
+.video{
+    display: block;
+}
+}
+
+
+
+
+
+.main_content{
+    
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    display: inline-block;
+    display: block;
+    padding: 20px;
+    
+   
+}
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+   
+
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 80%;
+    margin-top: 0;
+    padding-top: .10em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5em;
+    
+    
+}
+
+.main_content_title{
+    color: rgb(104, 20, 20);
+    padding: 0;
+    font-family: 'Noticia Text', serif;
+    margin: 0;
+    
+    
+
+}
+
+.main_content_title2{
+    color: #cec7c7;
+    margin: 0;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 1.1em;
+
+}
+
+p{
+    font-family: 'Bodoni Moda', serif;
+    color: rgb(122, 11, 11);
+    text-align: center;
+}
+
+.icon_img{
+        width: 8.5em;
+       
+    
+        
+    }
+
+    .icon_img:hover{
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+transform: scale(1.1);
+    }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+@media screen and (min-width:48em){
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+
+}
+
+p{
+    color:#ffffff
+}
+    
+    footer{
+        background-color: rgb(122, 11, 11);
+        color: #ffffff;
+        padding: 1em;
+        text-align: center;
+        font-family: 'Edu SA Beginner', cursive;
+    }
+
